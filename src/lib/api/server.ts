@@ -22,9 +22,7 @@ import { snapToHour } from "@/lib/utils";
 const PROVIDER_BASE = process.env.ZUCA_PROVIDER_BASE ?? "https://embedtv.cc";
 
 /** Fallback manifest used when a provider embed page cannot be scraped. */
-const FALLBACK_HLS =
-  process.env.ZUCA_FALLBACK_HLS ??
-  "https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8";
+const FALLBACK_HLS = process.env.ZUCA_FALLBACK_HLS ?? "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8";
 
 const USER_AGENT =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
